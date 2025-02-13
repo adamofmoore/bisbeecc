@@ -8,12 +8,12 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "Precision Concrete Cutting & Coring in Northern California",
+  description:
+    "Bisbee Concrete Coring provides expert concrete coring and saw cutting services across Northern California. As a woman-owned, family-operated business, we prioritize safety, precision, and efficiency for residential, commercial, and industrial projects. Contact us for reliable and professional concrete cutting solutions!",
   // other metadata
 };
 
@@ -23,13 +23,12 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
-      <Brands />
+      {/* <Video /> */}
+      {/* <Brands /> */}
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimonials />
       <Pricing />
-      <Blog />
       <Contact />
     </>
   );
