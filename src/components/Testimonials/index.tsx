@@ -6,27 +6,27 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    designation: "Some Company",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Our team was so impressed by Bisbee Concrete Coring. They went above and beyond our expectations. We really can't recommend them enough! They were fantastic.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
     name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    designation: "Another Company",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Our team was so impressed by Bisbee Concrete Coring. They went above and beyond our expectations. We really can't recommend them enough! They were fantastic.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
     name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    designation: "Concrete King, CEO",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Our team was so impressed by Bisbee Concrete Coring. They went above and beyond our expectations. We really can't recommend them enough! They were fantastic.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -37,7 +37,7 @@ const Testimonials = () => {
     <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Clients Says"
+          title="What Our Clients Say"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
         />
