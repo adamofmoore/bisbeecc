@@ -4,7 +4,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ["localhost"],
+    domains: ["localhost", "placehold.co"],
     remotePatterns: [
       {
         protocol: "https",
