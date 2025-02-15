@@ -48,15 +48,7 @@ const AboutSectionOne = () => {
                   </>
                 }
                 mb="44px"
-              >
-                {" "}
-                <Link
-                  href="/services"
-                  className="mt-12 inline-block rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
-                >
-                  Learn More About Us
-                </Link>
-              </SectionTitle>
+              ></SectionTitle>
 
               <div
                 className="mb-12 max-w-[570px] lg:mb-0"
@@ -74,6 +66,13 @@ const AboutSectionOne = () => {
                   </div>
                 </div>
               </div>
+
+              <Link
+                href="/services"
+                className="mt-12 inline-block rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
+              >
+                Learn More About Us
+              </Link>
             </div>
 
             {/* Right Column: Placeholder Image */}
