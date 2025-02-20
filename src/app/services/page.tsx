@@ -29,7 +29,7 @@ const ServicesPage = () => {
               <p className="text-lg text-gray-600 dark:text-gray-300">
                 Core drilling is a specialized technique used to create precise,
                 circular holes in{" "}
-                <strong>concrete, masonry, and asphalt</strong>. It's essential
+                <strong>concrete, masonry, and asphalt</strong>. It is essential
                 for tasks such as:
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-6 text-lg text-gray-600 dark:text-gray-300">
