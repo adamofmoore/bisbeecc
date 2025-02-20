@@ -1,9 +1,7 @@
-import SharePost from "@/components/Blog/SharePost";
-import TagButton from "@/components/Blog/TagButton";
-import Image from "next/image";
-
-import { Metadata } from "next";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Contact from "@/components/Contact";
+import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -245,6 +243,9 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
+      <div className="bg-primary">
+        <Contact />
+      </div>
     </>
   );
 };

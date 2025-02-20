@@ -1,9 +1,12 @@
 "use client";
-import Image from "next/image";
+
+// import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
+import styled from "styled-components";
+import { media } from "@/mixins/media";
 
 const Header = () => {
   // Navbar toggle
@@ -48,14 +51,14 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
+                className={`header-logo block ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
+                {/* <Image
                   src="/images/logo/logo-2.svg"
                   alt="logo"
                   width={140}
@@ -68,10 +71,11 @@ const Header = () => {
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
-                />
+                /> */}
+                <Logo>Bisbee Concrete Coring</Logo>
               </Link>
             </div>
-            <div className="flex w-full items-center justify-end px-4">
+            <div className="flex items-center justify-end px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -167,5 +171,19 @@ const Header = () => {
     </>
   );
 };
+
+export const Logo = styled.h1`
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-right: 24px;
+
+  ${media.tablet`
+    font-size: 1.6rem;
+    line-height: 1;
+  `}
+`;
 
 export default Header;

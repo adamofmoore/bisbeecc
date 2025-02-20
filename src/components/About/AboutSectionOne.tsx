@@ -1,6 +1,8 @@
-import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
+"use client";
+
 import Link from "next/link";
+import styled from "styled-components";
+import SectionTitle from "../Common/SectionTitle";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -19,9 +21,9 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <AboutSection id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+        <div className="pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             {/* Left Column: Text Content */}
             <div className="w-full px-4 lg:w-1/2">
@@ -48,7 +50,7 @@ const AboutSectionOne = () => {
                   </>
                 }
                 mb="44px"
-              ></SectionTitle>
+              />
 
               <div
                 className="mb-12 max-w-[570px] lg:mb-0"
@@ -68,7 +70,7 @@ const AboutSectionOne = () => {
               </div>
 
               <Link
-                href="/services"
+                href="/about"
                 className="mt-12 inline-block rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
               >
                 Learn More About Us
@@ -88,8 +90,13 @@ const AboutSectionOne = () => {
           </div>
         </div>
       </div>
-    </section>
+    </AboutSection>
   );
 };
+
+const AboutSection = styled.section`
+  background: #001123 url("/images/concrete-bg@2x.jpg") center center;
+  background-size: cover;
+`;
 
 export default AboutSectionOne;

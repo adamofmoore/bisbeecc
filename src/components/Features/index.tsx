@@ -7,7 +7,7 @@ const Features = () => {
   return (
     <section id="features" className="py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 ">
           {/* Left Column - Section Title */}
           <div className="w-full">
             <SectionTitle

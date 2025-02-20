@@ -50,11 +50,11 @@ module.exports = {
         },
         stroke: {
           stroke: "#E3E8EF",
-          dark: "#353943",
+          dark: "#253943",
         },
         gray: {
           ...colors.gray,
-          dark: "#1E232E",
+          dark: "#001123",
           light: "#F0F2F9",
         },
       },

@@ -1,5 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import ScrollUp from "@/components/Common/ScrollUp";
+import { Separator } from "@/components/Common/Separator";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
@@ -9,7 +10,6 @@ export const metadata: Metadata = {
   title: "Precision Concrete Cutting & Coring in Northern California",
   description:
     "Bisbee Concrete Coring provides expert concrete coring and saw cutting services across Northern California. As a woman-owned, family-operated business, we prioritize safety, precision, and efficiency for residential, commercial, and industrial projects. Contact us for reliable and professional concrete cutting solutions!",
-  // other metadata
 };
 
 export default function Home() {
@@ -17,13 +17,13 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      <Separator />
       <Features />
-      <hr style={{ borderColor: "#788293" }} />
+      {/* <Separator /> */}
       {/* <Video /> */}
       {/* <Brands /> */}
       <AboutSectionOne />
-      <hr style={{ borderColor: "#788293" }} />
-
+      {/* <Separator /> */}
       {/* <AboutSectionTwo /> */}
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
