@@ -1,93 +1,139 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
 import { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Expert Concrete Cutting & Coring Services | Bisbee Concrete Coring",
   description:
     "Bisbee Concrete Coring offers precision core drilling and saw cutting for residential, commercial, and industrial projects across Northern California. Using advanced equipment and eco-friendly techniques, we provide clean, accurate, and efficient results for geotechnical investigations, utility installations, and structural modifications. Contact us today!",
-  // other metadata
 };
 
 const ServicesPage = () => {
   return (
     <>
+      {/* Breadcrumb Section */}
       <Breadcrumb
         pageName="Our Services"
         description="Precision core drilling and saw cutting for residential, commercial, and industrial projects across Northern California."
       />
-      <section className="pb-[120px] pt-[80px]">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
-            <div className="w-full px-4 lg:w-8/12">
-              <div>
-                <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat.
-                </p>
-                <div className="mb-10 w-full overflow-hidden rounded">
-                  <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
-                    <Image
-                      src="/images/blog/blog-details-02.jpg"
-                      alt="image"
-                      fill
-                      className="object-cover object-center"
-                    />
-                  </div>
-                </div>
-                <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis enim lobortis scelerisque fermentum. Neque sodales ut
-                  etiam sit amet. Ligula ullamcorper
-                  <strong className="text-primary dark:text-white">
-                    malesuada
+
+      {/* Services Section */}
+      <section className="pb-16 pt-10 lg:pb-28 lg:pt-16">
+        <div className="container mx-auto px-6 lg:px-12">
+          {/* Core Drilling Section */}
+          <div className="mb-32 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+            <div>
+              <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+                Core Drilling
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Core drilling is a specialized technique used to create precise,
+                circular holes in{" "}
+                <strong>concrete, masonry, and asphalt</strong>. It's essential
+                for tasks such as:
+              </p>
+              <ul className="mt-4 list-disc space-y-2 pl-6 text-lg text-gray-600 dark:text-gray-300">
+                <li>
+                  <strong>Geotechnical & Environmental Investigations:</strong>{" "}
+                  Openings for <strong>water & vapor well boxes</strong>,{" "}
+                  <strong>CPT & Auger applications</strong>, and{" "}
+                  <strong>utility clearing</strong>.
+                </li>
+                <li>
+                  <strong>Utility & HVAC Installations:</strong> Openings in{" "}
+                  <strong>
+                    walls, floors, ceilings, sewer & storm drain systems
                   </strong>
-                  proin libero nunc consequat interdum varius. Quam pellentesque
-                  nec nam aliquam sem et tortor consequat. Pellentesque
-                  adipiscing commodo elit at imperdiet.
-                </p>
-                <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  Semper auctor neque vitae tempus quam pellentesque nec.
-                  <span className="text-primary underline dark:text-white">
-                    Amet dictum sit amet justo
-                  </span>
-                  donec enim diam. Varius sit amet mattis vulputate enim nulla
-                  aliquet porttitor. Odio pellentesque diam volutpat commodo
-                  sed.
-                </p>
-                <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                  Stuff here{" "}
-                </h3>
-                <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  consectetur adipiscing elit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  mattis vulputate cupidatat.
-                </p>
-                <ul className="mb-10 list-inside list-disc text-body-color">
-                  <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                    Consectetur adipiscing elit in voluptate velit.
-                  </li>
-                  <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                    Mattis vulputate cupidatat.
-                  </li>
-                  <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                    Vulputate enim nulla aliquet porttitor odio pellentesque
-                  </li>
-                  <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                    Ligula ullamcorper malesuada proin
-                  </li>
-                </ul>
-              </div>
+                  .
+                </li>
+                <li>
+                  <strong>Structural Modifications & Testing:</strong>{" "}
+                  Extracting{" "}
+                  <strong>concrete cores for strength testing</strong> and{" "}
+                  <strong>anchor bolt modifications</strong>.
+                </li>
+              </ul>
+              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                We use <strong>Hilti core drilling equipment</strong> and{" "}
+                <strong>eco-friendly slurry collection systems</strong>,
+                ensuring <strong>minimal water usage & waste</strong> for a{" "}
+                <strong>cleaner, more efficient jobsite</strong>.
+              </p>
+            </div>
+            <div className="relative h-72 w-full md:h-96">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Core drilling operation"
+                // layout="fill"
+                // objectFit="cover"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+
+          {/* Saw Cutting Section */}
+          <div className="mb-16 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+            <div className="relative h-72 w-full md:h-96">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Saw cutting operation"
+                // layout="fill"
+                // objectFit="cover"
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div>
+              <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+                Saw Cutting
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Saw cutting is a technique used to create{" "}
+                <strong>straight, precise cuts</strong> for{" "}
+                <strong>small to large rectangular openings</strong> in{" "}
+                <strong>concrete, masonry, and asphalt</strong>. It is essential
+                for:
+              </p>
+              <ul className="mt-4 list-disc space-y-2 pl-6 text-lg text-gray-600 dark:text-gray-300">
+                <li>
+                  <strong>Geotechnical & Environmental Investigations:</strong>{" "}
+                  Openings for <strong>water & vapor well boxes</strong> and{" "}
+                  <strong>utility clearing</strong>.
+                </li>
+                <li>
+                  <strong>Utility & HVAC Installations:</strong> Cutting
+                  openings in{" "}
+                  <strong>walls, floors, ceilings, and trenches</strong>.
+                </li>
+              </ul>
+              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                We use <strong>hand-held and walk-behind concrete saws</strong>,
+                accommodating depths up to <strong>12 inches</strong>. All
+                sawing is operated with <strong>water</strong>, and slurry is
+                efficiently collected using a <strong>vacuum system</strong>.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <div className="bg-primary">
-        <Contact />
+
+      {/* Equipment Section */}
+      <div className="bg-bg-color-dark">
+        <div className="container py-32 text-center">
+          <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+            Advanced Equipment for Every Project
+          </h2>
+          <p className="mx-auto max-w-3xl text-lg text-gray-600 dark:text-gray-300">
+            We are equipped for{" "}
+            <strong>core drilling and saw cutting projects of all sizes</strong>
+            . Our use of <strong>advanced Hilti drilling equipment</strong> and{" "}
+            <strong>vacuum slurry collection systems</strong> ensures{" "}
+            <strong>clean, precise, and eco-friendly&nbsp;operations</strong>.
+          </p>
+        </div>
       </div>
+
+      {/* Contact Section */}
+      <Contact />
     </>
   );
 };
