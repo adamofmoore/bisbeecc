@@ -13,7 +13,7 @@ const List = ({ text }) => (
 const featuresData: Feature[] = [
   {
     id: 1,
-    title: "Core Drill",
+    title: "Core Drilling",
     paragraph:
       "Core drilling is a specialized technique used to create precise, circular holes in hard materials like concrete, masonry, and asphalt.",
     children: (
