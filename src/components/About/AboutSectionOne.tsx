@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import SectionTitle from "../Common/SectionTitle";
+import Image from "next/image";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -79,11 +80,11 @@ const AboutSectionOne = () => {
 
             {/* Right Column: Placeholder Image */}
             <div className="flex w-full justify-center px-4 lg:w-1/2">
-              <img
-                src="https://placehold.co/600x500"
-                alt="Placeholder Image"
+              <Image
+                src="/images/concrete-pouring.jpg"
+                alt="Pouring concrete"
                 width={600}
-                height={500}
+                height={900}
                 className="rounded-lg shadow-lg"
               />
             </div>
