@@ -78,7 +78,7 @@ const AboutSectionOne = () => {
               </Link>
             </div>
 
-            {/* Right Column: Placeholder Image */}
+            {/* Right Column */}
             <div className="flex w-full justify-center px-4 lg:w-1/2">
               <Image
                 src="/images/concrete-pouring.jpg"
