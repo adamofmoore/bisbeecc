@@ -1,5 +1,6 @@
 "use client";
 
+import { media } from "@/mixins/media";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -22,34 +23,48 @@ const Hero = () => {
   return (
     <Wrapper
       id="home"
-      className="pb-16 pt-[140px] md:pb-[120px] md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px]"
+      className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
     >
-      <div className="container">
-        <ContentContainer>
-          <h1 className="mb-5 text-2xl font-bold text-white sm:text-4xl md:text-5xl">
-            Northern California Concrete Coring and Saw Cutting Specialists
-          </h1>
-          <p className="mb-8 text-xl text-body-color dark:text-body-color-dark">
-            Reliable, efficient, and expert concrete cutting services for
-            residential, commercial, and industrial projects.
-          </p>
-          <Checks>
-            <List text="Woman-Owned & Family-Operated" />
-            <List text="Focus on Safety, Quality, and Precision" />
-            <List text="Certified Technicians with Years of Experience" />
-          </Checks>
-          <div className="mt-12 flex flex-col items-center gap-4">
-            <Link
-              href="mailto:info@bisbeecc.com"
-              className="rounded-sm bg-primary px-16 py-4 font-semibold text-white hover:bg-primary/80"
-            >
-              Contact Us
-            </Link>
-            <p className="dark:text-body-color-light text-body-white text-lg">
-              or <strong>Call (530) 591-2783</strong>
+      <div className="container relative mx-auto px-4">
+        <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
+          {/* Left Content */}
+          <div className="w-full lg:w-1/2">
+            <Heading className="mb-5 text-2xl font-bold text-white sm:text-4xl md:text-5xl">
+              Northern California Concrete Coring and Saw Cutting Specialists
+            </Heading>
+            <p className="mb-8 text-xl text-body-color dark:text-body-color-dark">
+              Reliable, efficient, and expert concrete cutting services for
+              residential, commercial, and industrial projects.
             </p>
+            <Checks>
+              <List text="Woman-Owned & Family-Operated" />
+              <List text="Focus on Safety, Quality, and Precision" />
+              <List text="Certified Technicians with Years of Experience" />
+            </Checks>
+            <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row">
+              <Link
+                href="mailto:info@bisbeecc.com"
+                className="rounded-sm bg-primary px-16 py-4 text-white hover:bg-primary/80 sm:px-12"
+              >
+                Contact Us
+              </Link>
+              or
+              <Phone className="dark:text-body-color-light text-body-white text-lg">
+                <Link href="tel:+15306912783">Call (530) 591-2783</Link>
+              </Phone>
+            </div>
           </div>
-        </ContentContainer>
+          {/* Right Image */}
+          {/*  <RightColumn className="flex w-full justify-center md:w-1/2">
+            <Image
+              src="/images/hero/hero-bg.jpg"
+              alt="Concrete Cutting"
+              className="w-full max-w-lg rounded-lg shadow-lg"
+              width={512}
+              height={300}
+            /> 
+          </RightColumn>*/}
+        </div>
       </div>
     </Wrapper>
   );
@@ -59,11 +74,15 @@ export default Hero;
 
 const Wrapper = styled.section`
   position: relative;
-  background: #001123 url("/images/hero/concrete-hero-bg.jpg") center center
+  background: #001123 url("/images/hero/hero-bg.jpg") center right -150px
     no-repeat;
   /* background: #001123 url("/images/concrete-bg@2x.jpg") center center; */
-
   background-size: cover;
+
+  ${media.desktop`
+    background-position: center center;
+  `}
+
   &:before {
     content: "";
     position: absolute;
@@ -71,7 +90,7 @@ const Wrapper = styled.section`
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(13, 16, 24, 0.95);
+    background: rgba(13, 16, 24, 0.4); // 0d1018f2
     /* background: rgba(13, 16, 24, 0.5); */
   }
 `;
@@ -85,14 +104,25 @@ const ContentContainer = styled.div`
   max-width: 800px;
   margin: auto;
   /* text-align: center; */
+`;
 
-  h1 {
-    line-height: 1.2;
-  }
+const Heading = styled.h1`
+  line-height: 1.2;
 `;
 
 const Checks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+`;
+
+const RightColumn = styled.div`
+  ${media.desktopMax`
+    display: none;
+  `}
+`;
+
+const Phone = styled.p`
+  font-weight: bold;
+  border-bottom: 1px solid #788293;
 `;
