@@ -1,8 +1,7 @@
 "use client";
 
-import styled from "styled-components";
 import Link from "next/link";
-import Image from "next/image";
+import styled from "styled-components";
 
 export const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -23,48 +22,34 @@ const Hero = () => {
   return (
     <Wrapper
       id="home"
-      className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+      className="pb-16 pt-[140px] md:pb-[120px] md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px]"
     >
-      <div className="container relative mx-auto px-4">
-        <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
-          {/* Left Content */}
-          <div className="w-full md:w-1/2">
-            <h1 className="mb-5 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-5xl">
-              Precision Concrete Coring & Saw Cutting in Northern California
-            </h1>
-            <p className="mb-8 text-xl text-body-color dark:text-body-color-dark">
-              Reliable, efficient, and expert concrete cutting services for
-              residential, commercial, and industrial projects.
+      <div className="container">
+        <ContentContainer>
+          <h1 className="mb-5 text-2xl font-bold text-white sm:text-4xl md:text-5xl">
+            Northern California Concrete Coring and Saw Cutting Specialists
+          </h1>
+          <p className="mb-8 text-xl text-body-color dark:text-body-color-dark">
+            Reliable, efficient, and expert concrete cutting services for
+            residential, commercial, and industrial projects.
+          </p>
+          <Checks>
+            <List text="Woman-Owned & Family-Operated" />
+            <List text="Focus on Safety, Quality, and Precision" />
+            <List text="Certified Technicians with Years of Experience" />
+          </Checks>
+          <div className="mt-12 flex flex-col items-center gap-4">
+            <Link
+              href="mailto:info@bisbeecc.com"
+              className="rounded-sm bg-primary px-16 py-4 font-semibold text-white hover:bg-primary/80"
+            >
+              Contact Us
+            </Link>
+            <p className="dark:text-body-color-light text-body-white text-lg">
+              or <strong>Call (530) 591-2783</strong>
             </p>
-            <Checks>
-              <List text="Woman-Owned & Family-Operated" />
-              <List text="Serving Northern California with Safety & Precision" />
-              <List text="Certified & Insured Licensed C61/D06 Contractor" />
-            </Checks>
-            <div className="mt-12 flex flex-col items-center gap-8 sm:flex-row">
-              <Link
-                href="/contact"
-                className="rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
-              >
-                Contact Us
-              </Link>
-              <p className="dark:text-body-color-light text-body-white text-lg">
-                or Call (530) 591-2783
-              </p>
-            </div>
           </div>
-
-          {/* Right Image */}
-          <div className="flex w-full justify-center md:w-1/2">
-            <Image
-              src="/images/hero/concrete-hero-bg.jpg"
-              alt="Concrete Cutting"
-              className="w-full max-w-lg rounded-lg shadow-lg"
-              width={512}
-              height={300}
-            />
-          </div>
-        </div>
+        </ContentContainer>
       </div>
     </Wrapper>
   );
@@ -73,8 +58,10 @@ const Hero = () => {
 export default Hero;
 
 const Wrapper = styled.section`
-  /* background: url("/images/hero/concrete-hero-bg.jpg") center center no-repeat; */
-  background: #001123 url("/images/concrete-bg@2x.jpg") center center;
+  position: relative;
+  background: #001123 url("/images/hero/concrete-hero-bg.jpg") center center
+    no-repeat;
+  /* background: #001123 url("/images/concrete-bg@2x.jpg") center center; */
 
   background-size: cover;
   &:before {
@@ -84,8 +71,23 @@ const Wrapper = styled.section`
     bottom: 0;
     left: 0;
     right: 0;
-    /* background: rgba(13, 16, 24, 0.9); */
-    background: rgba(13, 16, 24, 0.5);
+    background: rgba(13, 16, 24, 0.95);
+    /* background: rgba(13, 16, 24, 0.5); */
+  }
+`;
+
+const ContentContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-center: center; */
+  max-width: 800px;
+  margin: auto;
+  /* text-align: center; */
+
+  h1 {
+    line-height: 1.2;
   }
 `;
 
