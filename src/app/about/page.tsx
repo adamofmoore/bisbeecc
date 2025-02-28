@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -67,7 +68,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Team Section */}
-      <section className="bg-white py-16 dark:bg-gray-800">
+      <section className="bg-gray-900 py-16">
         <div className="container mx-auto text-center">
           <h2 className="mb-12 text-4xl font-bold text-gray-900 dark:text-white">
             Meet Our Team
@@ -90,14 +91,23 @@ const AboutPage = () => {
                   <p className="text-lg text-gray-600 dark:text-gray-300">
                     Founder & Project Manager
                   </p>
+                  <Link href="mailto:jbisbee@bisbeecc.com" className="text-lg">
+                    jbisbee@bisbeecc.com
+                  </Link>
                 </div>
               </div>
-              <p className="mt-4 text-gray-600 dark:text-gray-300">
-                With <strong>18 years of industry experience</strong>, John has
-                worked on major civil projects, post-disaster residential
-                rebuilding, and geotechnical site investigations. He is{" "}
-                <strong>NULCA-certified</strong>, ensuring safe and precise
-                utility locating.
+              <p className="mb-4 mt-4">
+                Mr. Bisbee is the founder of Bisbee Concrete Coring. He is the
+                project manager handling the completion of core drilling and saw
+                cutting operations. He has dedicated 18 years to this industry.
+                Mr. Bisbee has worked and managed civil projects within the Bay
+                Area petrochemical industry, he has assisted in the rebuilding
+                of residential homes after the 2015 Napa County fires and
+                established a professional career in the drilling industry on
+                geotechnical and environmental site investigations. Among other
+                things, Mr. Bisbee is certified by the National Utility Locating
+                Contractors Association (NULCA) for the pursuit of standardizing
+                safe practices in utility locating.
               </p>
             </div>
 
@@ -118,17 +128,42 @@ const AboutPage = () => {
                   <p className="text-lg text-gray-600 dark:text-gray-300">
                     President & Owner
                   </p>
+                  <Link href="mailto:lburke@bisbeecc.com" className="text-lg">
+                    lburke@bisbeecc.com
+                  </Link>
                 </div>
               </div>
-              <p className="mt-4 text-gray-600 dark:text-gray-300">
-                Leta oversees <strong>daily operations</strong> and strategic
-                company growth. A graduate of{" "}
-                <strong>California State University, Chico</strong>, she is
-                working with the <strong>SBA</strong> to achieve{" "}
-                <strong>WOSB certification</strong>.
+              <p className="mb-4 mt-4">
+                Ms. Burke is president and owner of Bisbee Concrete Coring. She
+                founded this corporation in collaboration with John Bisbee. Her
+                duties are to oversee daily operations and assist in the
+                structure and growth of the company. She graduated with honors
+                from California State University, Chico with a Batchelor&apos;s
+                in science. As an entrepreneur and first-time business owner she
+                is working closely with the Small Business Administration (SBA)
+                to become a certified Women-Owned Small Business (WOSB).
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Licensing */}
+      <section className="bg-dark px-12 py-16">
+        <div
+          className="container mx-auto text-center"
+          style={{ maxWidth: 800 }}
+        >
+          <h2 className="text-2xl lg:text-4xl">License and Insurance</h2>
+          <p className="mb-4 mt-8 text-lg">
+            Bisbee Concrete Coring maintains a valid C61/D06 Contractors license
+            in the state of California.
+          </p>
+          <p className="text-lg">
+            J.B. Concrete Coring dba Bisbee Concrete Coring C61/D06 license
+            number <u>1129308</u>. Our insurance policies come with general
+            liability and commercial auto liability.
+          </p>
         </div>
       </section>
     </>
