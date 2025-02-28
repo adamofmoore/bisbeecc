@@ -1,8 +1,8 @@
 "use client";
 
-import styled from "styled-components";
+import { media } from "@/mixins/media";
 import Link from "next/link";
-import Image from "next/image";
+import styled from "styled-components";
 
 export const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -28,42 +28,42 @@ const Hero = () => {
       <div className="container relative mx-auto px-4">
         <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
           {/* Left Content */}
-          <div className="w-full md:w-1/2">
-            <h1 className="mb-5 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-5xl">
-              Precision Concrete Coring & Saw Cutting in Northern California
-            </h1>
+          <div className="w-full lg:w-1/2">
+            <Heading className="mb-5 text-3xl font-bold text-white md:text-4xl xl:text-5xl">
+              Northern California Concrete Coring and Saw Cutting Specialists
+            </Heading>
             <p className="mb-8 text-xl text-body-color dark:text-body-color-dark">
               Reliable, efficient, and expert concrete cutting services for
               residential, commercial, and industrial projects.
             </p>
             <Checks>
               <List text="Woman-Owned & Family-Operated" />
-              <List text="Serving Northern California with Safety & Precision" />
-              <List text="Certified & Insured Licensed C61/D06 Contractor" />
+              <List text="Focus on Safety, Quality, and Precision" />
+              <List text="Certified Technicians with Years of Experience" />
             </Checks>
-            <div className="mt-12 flex flex-col items-center gap-8 sm:flex-row">
+            <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row">
               <Link
-                href="/contact"
-                className="rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
+                href="mailto:info@bisbeecc.com"
+                className="rounded-sm bg-primary px-16 py-4 text-white hover:bg-primary/80 sm:px-12"
               >
                 Contact Us
               </Link>
-              <p className="dark:text-body-color-light text-body-white text-lg">
-                or Call (530) 591-2783
-              </p>
+              or
+              <Phone className="dark:text-body-color-light text-body-white text-lg">
+                <Link href="tel:+15306912783">Call (530) 591-2783</Link>
+              </Phone>
             </div>
           </div>
-
           {/* Right Image */}
-          <div className="flex w-full justify-center md:w-1/2">
+          {/*  <RightColumn className="flex w-full justify-center md:w-1/2">
             <Image
-              src="/images/hero/concrete-hero-bg.jpg"
+              src="/images/hero/hero-bg.jpg"
               alt="Concrete Cutting"
               className="w-full max-w-lg rounded-lg shadow-lg"
               width={512}
               height={300}
-            />
-          </div>
+            /> 
+          </RightColumn>*/}
         </div>
       </div>
     </Wrapper>
@@ -73,10 +73,16 @@ const Hero = () => {
 export default Hero;
 
 const Wrapper = styled.section`
-  /* background: url("/images/hero/concrete-hero-bg.jpg") center center no-repeat; */
-  background: #001123 url("/images/concrete-bg@2x.jpg") center center;
-
+  position: relative;
+  background: #001123 url("/images/hero/hero-bg.jpg") center right -150px
+    no-repeat;
+  /* background: #001123 url("/images/concrete-bg@2x.jpg") center center; */
   background-size: cover;
+
+  ${media.desktop`
+    background-position: center center;
+  `}
+
   &:before {
     content: "";
     position: absolute;
@@ -84,13 +90,39 @@ const Wrapper = styled.section`
     bottom: 0;
     left: 0;
     right: 0;
-    /* background: rgba(13, 16, 24, 0.9); */
-    background: rgba(13, 16, 24, 0.5);
+    background: rgba(13, 16, 24, 0.4); // 0d1018f2
+    /* background: rgba(13, 16, 24, 0.5); */
   }
+`;
+
+const ContentContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-center: center; */
+  max-width: 800px;
+  margin: auto;
+  /* text-align: center; */
+`;
+
+const Heading = styled.h1`
+  line-height: 1.2;
 `;
 
 const Checks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+`;
+
+const RightColumn = styled.div`
+  ${media.desktopMax`
+    display: none;
+  `}
+`;
+
+export const Phone = styled.p`
+  font-weight: bold;
+  border-bottom: 1px solid #788293;
 `;

@@ -29,50 +29,27 @@ const AboutSectionOne = () => {
             {/* Left Column: Text Content */}
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Our Mission"
+                title="About Us"
                 paragraph={
                   <>
-                    Bisbee Concrete Coring was founded to provide expert site
-                    preparation services for the{" "}
-                    <strong>
-                      geotechnical, environmental, drilling, and civil
-                      industries
-                    </strong>
-                    . With extensive experience in
-                    <strong>
-                      site investigation, civil, and residential construction
-                    </strong>
-                    , we have built a company designed to meet the specific
-                    needs of our clients.
+                    Bisbee Concrete Coring was founded to provide site
+                    preparation services to the geotechnical, environmental,
+                    civil and residential industries. With extensive experience
+                    in site investigation, civil and residential construction,
+                    we have built a company designed to meet the specific needs
+                    of our clients.
                     <br />
                     <br />
-                    As part of our commitment to innovation and safety, we are
-                    actively working on expanding our services to include:
+                    As part of our commitment to innovation and safety we are
+                    actively working on expanding our services.
                   </>
                 }
                 mb="44px"
               />
 
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="GPR Concrete Scanning" />
-                    <List text="GPR Utility Locating" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="EM Utility Locating" />
-                    <List text="GPS Site Mapping" />
-                  </div>
-                </div>
-              </div>
-
               <Link
                 href="/about"
-                className="mt-12 inline-block rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
+                className="inline-block rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
               >
                 Learn More About Us
               </Link>

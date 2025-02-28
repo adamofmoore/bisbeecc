@@ -14,25 +14,24 @@ const featuresData: Feature[] = [
   {
     id: 1,
     title: "Core Drilling",
-    paragraph:
-      "Core drilling is a specialized technique used to create precise, circular holes in hard materials like concrete, masonry, and asphalt.",
+    paragraph: "Applications include:",
     children: (
       <div className="mt-5">
-        <List text="Geotechnical and environmental investigations" />
-        <List text="Utility and HVAC ducting installment" />
-        <List text="Structural modifications and testing" />
+        <List text="Geotechnical and Environmental Site Investigations" />
+        <List text="Utility and HVAC Ducting Installment" />
+        <List text="Structural Testing and Modifications" />
       </div>
     ),
   },
   {
     id: 2,
     title: "Saw Cutting",
-    paragraph:
-      "Saw Cutting is a specialized technique used to create straight precise cuts for small to large rectangular openings in hard materials like concrete, masonry, and asphalt.",
+    paragraph: "Generally used for:",
     children: (
       <div className="mt-5">
-        <List text="Geotechnical and environmental investigations" />
-        <List text="Utility and HVAC ducting installment" />
+        <List text="Flat Sawing for trenches and rectangular openings" />
+        <List text="Wall Sawing for structural and cosmetic modifications" />
+        <List text="Utility installment and repairs" />
       </div>
     ),
   },

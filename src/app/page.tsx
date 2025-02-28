@@ -1,7 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import { Separator } from "@/components/Common/Separator";
-import Contact from "@/components/Contact";
+import ContactCTA from "@/components/Contact/ContactCTA";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import { Metadata } from "next";
@@ -27,7 +27,7 @@ export default function Home() {
       {/* <AboutSectionTwo /> */}
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
-      <Contact />
+      <ContactCTA />
     </>
   );
 }
