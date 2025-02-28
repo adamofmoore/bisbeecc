@@ -27,14 +27,22 @@ const Footer = () => {
                 /> */}
                 <Logo>Bisbee Concrete Coring</Logo>
               </Link>
-              <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+
+              <p className="mb-2">
+                <Link href="mailto:info@bisbeecc.com">info@bisbeecc.com</Link>
+              </p>
+              <p className="mb-8">
+                <Link href="tel:+15306912783">(530) 591-2783</Link>
+              </p>
+
+              <p className="mb-8 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                 Bisbee Concrete Coring &copy; {new Date().getFullYear()}. All
                 Rights Reserved.
               </p>
             </div>
           </div>
 
-          <div className="ml-auto">
+          <div className="pr-4 md:ml-auto">
             <ul>
               <li>
                 <Link
@@ -54,7 +62,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="mailto:info@bisbeecc.com"
                   className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                 >
                   Contact Us

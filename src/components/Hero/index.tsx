@@ -122,7 +122,7 @@ const RightColumn = styled.div`
   `}
 `;
 
-const Phone = styled.p`
+export const Phone = styled.p`
   font-weight: bold;
   border-bottom: 1px solid #788293;
 `;
