@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title:
@@ -18,24 +19,15 @@ const AboutPage = () => {
       />
 
       {/* About Us Section */}
-      <section className="bg-gray-50 py-16 dark:bg-gray-900 md:py-20 lg:py-28">
+      <section className="py-16 md:py-20 lg:py-28">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div>
-              <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white">
-                Our Mission
+              <h2 className="mb-4 text-3xl font-bold text-white">
+                Looking to the Future
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                With years of experience in{" "}
-                <strong>
-                  site investigation, civil, and residential construction
-                </strong>
-                , our goal is to{" "}
-                <strong>build strong professional relationships</strong> while
-                expanding services to better suit industry needs.
-              </p>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                We are working to expand our offerings, including:
+                We are working to expand our services to include:
               </p>
               <ul className="mt-2 list-disc space-y-2 pl-6 text-lg text-gray-600 dark:text-gray-300">
                 <li>GPR Concrete Scanning</li>
@@ -44,20 +36,32 @@ const AboutPage = () => {
                 <li>GPS Site Mapping</li>
               </ul>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                Our team is <strong>NULCA-certified</strong>, aligning with
-                industry standards to ensure the highest level of safety and
-                precision in utility locating.
+                With this expansion we are in alliance with the National Utility
+                Locating Contractors Association (NULCA) for the pursuit of
+                standardizing safe practices in utility locating. Our
+                technicians are currently NULCA certified. NULCA's Locator
+                Training Standards and Practices are recognized by the Common
+                Ground Alliance (CGA). In addition, we are working closely with
+                the Small Business Administration (SBA) to become a certified
+                Women-Owned Small Business (WOSB).
+              </p>
+              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                Our top priority is to continue growing our involvement with
+                safe practices and providing quality work within California
+                industries.
+              </p>
+              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                We look forward to taking on new clientele and creating
+                long-lasting professional relationships.
               </p>
             </div>
-            <div className="relative h-72 w-full md:h-96">
-              <img
-                src="https://placehold.co/600x400"
-                alt="Concrete cutting project"
-                // layout="fill"
-                // objectFit="cover"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
+            <Image
+              src="/images/about/tower-bridge.jpg"
+              alt="Tower Bridge in Sacramento, CA"
+              className="w-full max-w-lg rounded-lg shadow-lg"
+              width={600}
+              height={600}
+            />
           </div>
         </div>
       </section>
