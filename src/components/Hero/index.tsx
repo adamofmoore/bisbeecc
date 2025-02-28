@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
           {/* Left Content */}
           <div className="w-full lg:w-1/2">
-            <Heading className="mb-5 text-2xl font-bold text-white sm:text-4xl md:text-5xl">
+            <Heading className="mb-5 text-3xl font-bold text-white md:text-4xl xl:text-5xl">
               Northern California Concrete Coring and Saw Cutting Specialists
             </Heading>
             <p className="mb-8 text-xl text-body-color dark:text-body-color-dark">
