@@ -19,8 +19,9 @@ const ServicesPage = () => {
 
       {/* Services Section */}
       <section
-        className="pb-16 pt-10 lg:pb-28 lg:pt-16"
-        style={{ backgroundColor: "#001123" }}
+        className="pt-10 lg:pt-16"
+        // className="pb-16 pt-10 lg:pb-28 lg:pt-16"
+        // style={{ backgroundColor: "#001123" }}
       >
         <div className="container mx-auto px-6 lg:px-12">
           {/* Core Drilling Section */}
