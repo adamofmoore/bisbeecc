@@ -1,6 +1,4 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/components/Contact";
-import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -129,9 +127,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      <Contact />
     </>
   );
 };
