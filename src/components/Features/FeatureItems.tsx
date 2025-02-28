@@ -1,9 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { checkIcon } from "../Hero";
 import Image from "next/image";
-import styled from "styled-components";
+import { checkIcon } from "../Hero";
 
 const List = ({ text }) => (
   <p className="mt-3 flex items-center text-lg font-medium text-white">
