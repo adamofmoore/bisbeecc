@@ -4,10 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title:
-    "About Us | Bisbee Concrete Coring – Precision Site Preparation & Utility Locating",
+  title: "About Us | Bisbee Concrete Coring",
   description:
-    "Bisbee Concrete Coring provides expert site preparation services for the geotechnical, environmental, drilling, and civil industries. We are expanding to include GPR concrete scanning, utility locating, and GPS site mapping, with NULCA-certified technicians ensuring safety and precision. A future certified Women-Owned Small Business (WOSB), we prioritize quality, safety, and professional relationships across California.",
+    "Bisbee Concrete Coring was founded to provide expert site preparation services to the geotechnical, environmental, drilling, and civil industries. With years of experience in site investigation, civil, and residential construction, we built a company that prioritizes the needs of our clients.",
 };
 
 const AboutPage = () => {
@@ -40,7 +39,7 @@ const AboutPage = () => {
                 With this expansion we are in alliance with the National Utility
                 Locating Contractors Association (NULCA) for the pursuit of
                 standardizing safe practices in utility locating. Our
-                technicians are currently NULCA certified. NULCA's Locator
+                technicians are currently NULCA certified. NULCA&apos;s Locator
                 Training Standards and Practices are recognized by the Common
                 Ground Alliance (CGA). In addition, we are working closely with
                 the Small Business Administration (SBA) to become a certified

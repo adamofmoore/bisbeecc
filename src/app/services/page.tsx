@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Our Services | Bisbee Concrete Coring",
   description:
-    "Bisbee Concrete Coring offers concrete coring and saw cutting for residential, commercial, and industrial projects across Northern California. Using advanced equipment and eco-friendly techniques, we provide clean, accurate, and efficient results for geotechnical investigations, utility installations, and structural modifications. Contact us today!",
+    "Concrete Coring and Saw Cutting services for residential, commercial, and industrial projects across Northern California.",
 };
 
 const ServicesPage = () => {
