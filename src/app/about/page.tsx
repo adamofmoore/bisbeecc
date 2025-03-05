@@ -68,33 +68,26 @@ const AboutPage = () => {
 
       {/* Our Team Section */}
       <section className="bg-gray-900 py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="mb-12 text-4xl font-bold text-gray-900 dark:text-white">
-            Meet Our Team
-          </h2>
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-            {/* John Bisbee */}
-            <div className="rounded-lg bg-gray-100 p-6 text-left shadow-lg  dark:bg-gray-700">
-              <div className="flex items-center space-x-6">
-                <Image
-                  src="/images/about/john-bisbee.jpg"
-                  alt="John Bisbee"
-                  className="w-full max-w-lg rounded-lg shadow-lg"
-                  width={600}
-                  height={993}
-                />
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    John Bisbee
-                  </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300">
-                    Founder & Project Manager
-                  </p>
-                  <Link href="mailto:jbisbee@bisbeecc.com" className="text-lg">
-                    jbisbee@bisbeecc.com
-                  </Link>
-                </div>
-              </div>
+        <div className="container mx-auto max-w-5xl space-y-12">
+          {/* Row 1: Image Left, Text Right */}
+          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
+            <Image
+              src="/images/about/john-bisbee.jpg"
+              alt="John Bisbee"
+              className="m-auto rounded-lg shadow-lg"
+              width={300}
+              height={500}
+            />
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                John Bisbee
+              </h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Founder & Project Manager
+              </p>
+              <Link href="mailto:jbisbee@bisbeecc.com" className="text-lg">
+                jbisbee@bisbeecc.com
+              </Link>
               <p className="mb-4 mt-4">
                 Mr. Bisbee is the founder of Bisbee Concrete Coring. He is the
                 project manager handling the completion of core drilling and saw
@@ -109,29 +102,20 @@ const AboutPage = () => {
                 safe practices in utility locating.
               </p>
             </div>
+          </div>
 
-            {/* Leta Burke */}
-            <div className="rounded-lg bg-gray-100 p-6 text-left shadow-lg dark:bg-gray-700">
-              <div className="flex items-center space-x-6 ">
-                <Image
-                  src="/images/about/leta-burke.jpg"
-                  alt="Leta Burke"
-                  className="w-full max-w-lg rounded-lg shadow-lg"
-                  width={600}
-                  height={993}
-                />
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    Leta Burke
-                  </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300">
-                    President & Owner
-                  </p>
-                  <Link href="mailto:lburke@bisbeecc.com" className="text-lg">
-                    lburke@bisbeecc.com
-                  </Link>
-                </div>
-              </div>
+          {/* Row 2: Text Left, Image Right */}
+          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Leta Burke
+              </h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                President & Owner
+              </p>
+              <Link href="mailto:lburke@bisbeecc.com" className="text-lg">
+                lburke@bisbeecc.com
+              </Link>
               <p className="mb-4 mt-4">
                 Ms. Burke is president and owner of Bisbee Concrete Coring. She
                 founded this corporation in collaboration with John Bisbee. Her
@@ -143,6 +127,13 @@ const AboutPage = () => {
                 to become a certified Women-Owned Small Business (WOSB).
               </p>
             </div>
+            <Image
+              src="/images/about/leta-burke.jpg"
+              alt="Leta Burke"
+              className="m-auto rounded-lg shadow-lg"
+              width={300}
+              height={500}
+            />
           </div>
         </div>
       </section>

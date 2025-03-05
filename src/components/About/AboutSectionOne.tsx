@@ -26,7 +26,7 @@ const AboutSectionOne = () => {
       id="about"
       className="pb-16 pt-16 md:pb-20 md:pt-20 lg:pb-28 lg:pt-28"
     >
-      <div className="container mx-auto text-center" style={{ maxWidth: 800 }}>
+      <div className="container mx-auto text-center">
         <SectionTitle
           title="About Us"
           paragraph={
@@ -44,6 +44,7 @@ const AboutSectionOne = () => {
           }
           mb="0"
           width="700px"
+          center
         >
           <Link
             href="/about"
