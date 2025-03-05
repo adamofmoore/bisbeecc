@@ -69,14 +69,11 @@ const AboutPage = () => {
 
       {/* Our Team Section */}
       <section className="bg-gray-900 py-16">
-        <div className="container mx-auto text-center">
-          <SectionTitle
-            title="Our Team"
-            paragraph="Meet the team behind Bisbee Concrete Coring. Our team is dedicated to providing expert site preparation services to the geotechnical, environmental, drilling, and civil industries. With years of experience in site investigation, civil, and residential construction, we built a company that prioritizes the needs of our clients."
-            width="800px"
-            center
-          />
-        </div>
+        <SectionTitle
+          title="Our Team"
+          paragraph="Meet the team behind Bisbee Concrete Coring."
+          center
+        />
         <div className="container mx-auto max-w-5xl space-y-12">
           {/* Row 1: Image Left, Text Right */}
           <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
@@ -88,16 +85,14 @@ const AboutPage = () => {
               height={500}
             />
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+              <h3 className="mb-2 text-2xl font-bold text-white">
                 John Bisbee
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                Founder & Project Manager
-              </p>
-              <Link href="mailto:jbisbee@bisbeecc.com" className="text-lg">
+              <p className="text-gray-300">Founder & Project Manager</p>
+              <Link href="mailto:jbisbee@bisbeecc.com">
                 jbisbee@bisbeecc.com
               </Link>
-              <p className="mb-4 mt-4">
+              <p className="mb-4 mt-4 text-lg text-gray-300">
                 Mr. Bisbee is the founder of Bisbee Concrete Coring. He is the
                 project manager handling the completion of core drilling and saw
                 cutting operations. He has dedicated 18 years to this industry.
@@ -123,16 +118,10 @@ const AboutPage = () => {
               height={500}
             />
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Leta Burke
-              </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                President & Owner
-              </p>
-              <Link href="mailto:lburke@bisbeecc.com" className="text-lg">
-                lburke@bisbeecc.com
-              </Link>
-              <p className="mb-4 mt-4">
+              <h3 className="mb-2 text-2xl font-bold text-white">Leta Burke</h3>
+              <p className="text-gray-300">President & Owner</p>
+              <Link href="mailto:lburke@bisbeecc.com">lburke@bisbeecc.com</Link>
+              <p className="mb-4 mt-4 text-lg text-gray-300">
                 Ms. Burke is president and owner of Bisbee Concrete Coring. She
                 founded this corporation in collaboration with John Bisbee. Her
                 duties are to oversee daily operations and assist in the
