@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -68,6 +69,14 @@ const AboutPage = () => {
 
       {/* Our Team Section */}
       <section className="bg-gray-900 py-16">
+        <div className="container mx-auto text-center">
+          <SectionTitle
+            title="Our Team"
+            paragraph="Meet the team behind Bisbee Concrete Coring. Our team is dedicated to providing expert site preparation services to the geotechnical, environmental, drilling, and civil industries. With years of experience in site investigation, civil, and residential construction, we built a company that prioritizes the needs of our clients."
+            width="800px"
+            center
+          />
+        </div>
         <div className="container mx-auto max-w-5xl space-y-12">
           {/* Row 1: Image Left, Text Right */}
           <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
