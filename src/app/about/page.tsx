@@ -76,12 +76,12 @@ const AboutPage = () => {
             {/* John Bisbee */}
             <div className="rounded-lg bg-gray-100 p-6 text-left shadow-lg  dark:bg-gray-700">
               <div className="flex items-center space-x-6">
-                <img
-                  src="https://placehold.co/150x150"
+                <Image
+                  src="/images/about/john-bisbee.jpg"
                   alt="John Bisbee"
-                  width={150}
-                  height={150}
-                  className="rounded-full"
+                  className="w-full max-w-lg rounded-lg shadow-lg"
+                  width={600}
+                  height={993}
                 />
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -113,12 +113,12 @@ const AboutPage = () => {
             {/* Leta Burke */}
             <div className="rounded-lg bg-gray-100 p-6 text-left shadow-lg dark:bg-gray-700">
               <div className="flex items-center space-x-6 ">
-                <img
-                  src="https://placehold.co/150x150"
+                <Image
+                  src="/images/about/leta-burke.jpg"
                   alt="Leta Burke"
-                  width={150}
-                  height={150}
-                  className="rounded-full"
+                  className="w-full max-w-lg rounded-lg shadow-lg"
+                  width={600}
+                  height={993}
                 />
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">

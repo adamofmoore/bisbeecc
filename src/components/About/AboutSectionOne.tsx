@@ -22,58 +22,43 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <AboutSection id="about" className="pt-16 md:pt-20 lg:pt-28">
-      <div className="container">
-        <div className="pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            {/* Left Column: Text Content */}
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="About Us"
-                paragraph={
-                  <>
-                    Bisbee Concrete Coring was founded to provide site
-                    preparation services to the geotechnical, environmental,
-                    civil and residential industries. With extensive experience
-                    in site investigation, civil and residential construction,
-                    we have built a company designed to meet the specific needs
-                    of our clients.
-                    <br />
-                    <br />
-                    As part of our commitment to innovation and safety we are
-                    actively working on expanding our services.
-                  </>
-                }
-                mb="44px"
-              />
-
-              <Link
-                href="/about"
-                className="inline-block rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
-              >
-                Learn More About Us
-              </Link>
-            </div>
-
-            {/* Right Column */}
-            <div className="flex w-full justify-center px-4 lg:w-1/2">
-              <Image
-                src="/images/concrete-pouring.jpg"
-                alt="Pouring concrete"
-                width={600}
-                height={900}
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
+    <AboutSection
+      id="about"
+      className="pb-16 pt-16 md:pb-20 md:pt-20 lg:pb-28 lg:pt-28"
+    >
+      <div className="container mx-auto text-center" style={{ maxWidth: 800 }}>
+        <SectionTitle
+          title="About Us"
+          paragraph={
+            <>
+              Bisbee Concrete Coring was founded to provide site preparation
+              services to the geotechnical, environmental, civil and residential
+              industries. With extensive experience in site investigation, civil
+              and residential construction, we have built a company designed to
+              meet the specific needs of our clients.
+              <br />
+              <br />
+              As part of our commitment to innovation and safety we are actively
+              working on expanding our services.
+            </>
+          }
+          mb="0"
+          width="700px"
+        >
+          <Link
+            href="/about"
+            className="mt-10 inline-block rounded-sm bg-primary px-8 py-4 font-semibold text-white hover:bg-primary/80"
+          >
+            Learn More About Us
+          </Link>
+        </SectionTitle>
       </div>
     </AboutSection>
   );
 };
 
 const AboutSection = styled.section`
-  background: #001123 url("/images/concrete-bg@2x.jpg") center center;
+  background: #001123 url("/images/about/about-bg.jpg") center center;
   background-size: cover;
 `;
 
