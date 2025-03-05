@@ -24,10 +24,10 @@ const AboutPage = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div>
-              <h2 className="mb-4 text-3xl font-bold text-white">
+              <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
                 Looking to the Future
               </h2>
-              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              <p className="mt-4 text-lg">
                 We are working to expand our services to include:
               </p>
               <ul className="mt-2 list-disc space-y-2 pl-6 text-lg text-gray-600 dark:text-gray-300">
@@ -36,7 +36,7 @@ const AboutPage = () => {
                 <li>EM Utility Locating</li>
                 <li>GPS Site Mapping</li>
               </ul>
-              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              <p className="mt-4 text-lg">
                 With this expansion we are in alliance with the National Utility
                 Locating Contractors Association (NULCA) for the pursuit of
                 standardizing safe practices in utility locating. Our
@@ -46,12 +46,12 @@ const AboutPage = () => {
                 the Small Business Administration (SBA) to become a certified
                 Women-Owned Small Business (WOSB).
               </p>
-              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              <p className="mt-4 text-lg">
                 Our top priority is to continue growing our involvement with
                 safe practices and providing quality work within California
                 industries.
               </p>
-              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              <p className="mt-4 text-lg">
                 We look forward to taking on new clientele and creating
                 long-lasting professional relationships.
               </p>
@@ -92,7 +92,7 @@ const AboutPage = () => {
               <Link href="mailto:jbisbee@bisbeecc.com">
                 jbisbee@bisbeecc.com
               </Link>
-              <p className="mb-4 mt-4 text-lg text-gray-300">
+              <p className="mb-4 mt-4 text-lg text-gray-200">
                 Mr. Bisbee is the founder of Bisbee Concrete Coring. He is the
                 project manager handling the completion of core drilling and saw
                 cutting operations. He has dedicated 18 years to this industry.
@@ -121,7 +121,7 @@ const AboutPage = () => {
               <h3 className="mb-2 text-2xl font-bold text-white">Leta Burke</h3>
               <p className="text-gray-300">President & Owner</p>
               <Link href="mailto:lburke@bisbeecc.com">lburke@bisbeecc.com</Link>
-              <p className="mb-4 mt-4 text-lg text-gray-300">
+              <p className="mb-4 mt-4 text-lg text-gray-200">
                 Ms. Burke is president and owner of Bisbee Concrete Coring. She
                 founded this corporation in collaboration with John Bisbee. Her
                 duties are to oversee daily operations and assist in the
