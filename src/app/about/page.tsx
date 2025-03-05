@@ -106,6 +106,13 @@ const AboutPage = () => {
 
           {/* Row 2: Text Left, Image Right */}
           <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
+            <Image
+              src="/images/about/leta-burke.jpg"
+              alt="Leta Burke"
+              className="m-auto rounded-lg shadow-lg md:order-last"
+              width={300}
+              height={500}
+            />
             <div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                 Leta Burke
@@ -127,13 +134,6 @@ const AboutPage = () => {
                 to become a certified Women-Owned Small Business (WOSB).
               </p>
             </div>
-            <Image
-              src="/images/about/leta-burke.jpg"
-              alt="Leta Burke"
-              className="m-auto rounded-lg shadow-lg"
-              width={300}
-              height={500}
-            />
           </div>
         </div>
       </section>
